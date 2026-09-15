@@ -1,0 +1,144 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 360px;
+            margin: 0 auto;
+            border: 1px solid #444;
+        }
+
+        .container-pengumuman {
+            margin-bottom: 5px;
+            border: 1px solid #444;
+            padding: 6px;
+        }
+
+        header {
+            background-color: #34249d;
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            font-size: 18px;
+            margin: 3px 0;
+        }
+
+        header p {
+            font-size: 11px;
+            margin: 3px 0;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 6px 8px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            font-size: 11px;
+            margin-left: 8px;
+        }
+
+        main {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        main p {
+            font-size: 12px;
+            margin: 4px 0;
+        }
+
+        form {
+            position: relative;
+            font-size: 11px;
+        }
+
+        form input {
+            width: 200px;
+            height: 22px;
+        }
+
+        form button {
+            height: 22px;
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        #saran {
+            position: absolute;
+            top: 22px;
+            left: 54px;
+            width: 200px;
+            background-color: white;
+            border: 1px solid #999;
+            display: none;
+            z-index: 10;
+        }
+
+        .saran-item {
+            padding: 6px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+            font-size: 11px;
+        }
+
+        .saran-item:hover {
+            background-color: #eee;
+        }
+
+        section {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .label {
+            display: block;
+            font-size: 10px;
+            color: #888;
+            margin-bottom: 3px;
+        }
+
+        article h2 {
+            font-size: 13px;
+            margin: 2px 0 4px 0;
+        }
+
+        article p {
+            font-size: 10px;
+            margin: 0;
+        }
+
+        section + div {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        section + div p {
+            font-size: 11px;
+            margin: 3px 0;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            padding: 7px 8px;
+        }
+
+        footer p {
+            font-size: 10px;
+            margin: 3px 0;
+        }

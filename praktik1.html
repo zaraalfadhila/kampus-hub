@@ -4,134 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KampusHub</title>
+    <link rel="stylesheet" href="style.css">
     <script type="module" src="main.js"></script>
-    
-    <style>
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            margin: 0;
-            padding: 10px;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            width: 360px;
-            margin: 0 auto;
-            border: 1px solid #444;
-        }
-
-        .container-pengumuman {
-            margin-bottom: 5px;
-            border: 1px solid #444;
-            padding: 6px;
-        }
-
-        header {
-            background-color: #34249dff;
-            padding: 8px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        header h1 {
-            font-size: 18px;
-            margin: 3px 0;
-        }
-
-        header p {
-            font-size: 11px;
-            margin: 3px 0;
-        }
-
-        nav {
-            background-color: #f4f4f4;
-            padding: 6px 8px;
-            border-bottom: 1px solid #ccc;
-            text-align: left;
-        }
-
-        nav ul {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav a {
-            font-size: 11px;
-            margin-left: 8px;
-        }
-
-        main {
-            padding: 8px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        main p {
-            font-size: 12px;
-            margin: 4px 0;
-        }
-
-        form {
-            font-size: 11px;
-        }
-
-        form input {
-            width: 200px;
-            height: 22px;
-        }
-
-        form button {
-            height: 22px;
-            font-size: 11px;
-        }
-
-        section {
-            padding: 8px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .label {
-            display: block;
-            font-size: 10px;
-            color: #888;
-            margin-bottom: 3px;
-        }
-
-        article h2 {
-            font-size: 13px;
-            margin: 2px 0 4px 0;
-        }
-
-        article p {
-            font-size: 10px;
-            margin: 0;
-        }
-
-        .container-pengumuman time {
-            font-size: 10px;
-        }
-
-        section + div {
-            padding: 8px;
-            border-bottom: 1px solid #ccc;
-        }
-
-        section + div p {
-            font-size: 11px;
-            margin: 3px 0;
-        }
-
-        footer {
-            background-color: #f4f4f4;
-            padding: 7px 8px;
-        }
-
-        footer p {
-            font-size: 10px;
-            margin: 3px 0;
-        }
-    </style>
 </head>
 
 <body>
@@ -149,6 +24,7 @@
                 <span>NAV</span>
                 <a href="#">Pengumuman</a>
                 <a href="#">Tentang</a>
+                <a href="#">Mahasiswa</a>
             </ul>
         </nav>
 
@@ -156,22 +32,25 @@
             <span class="label">MAIN - H1</span>
             <p>Pengumuman Terbaru</p>
 
-            <form>
-                <label for="q">Cari judul:</label>
-                <input type="text" id="q" name="q">
+            <form id="formPencarian">
+                <label for="q">Cari nama:</label>
+                <input type="text" id="q" name="q" autocomplete="off">
                 <button type="submit">Cari</button>
+
+                <div id="saran"></div>
             </form>
         </main>
 
         <section id="Daftar-Mahasiswa">
-
             <span class="label">DATA MAHASISWA</span>
-
         </section>
 
         <div>
             <span class="label">H2</span>
-            <p>KampusHub merupakan aplikasi sederhana berbasis web yang digunakan untuk menampilkan data mahasiswa dan nilai</p>
+            <p>
+                KampusHub merupakan aplikasi sederhana berbasis web
+                yang digunakan untuk menampilkan data mahasiswa dan nilai
+            </p>
         </div>
 
         <footer>
